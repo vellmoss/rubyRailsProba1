@@ -9,12 +9,13 @@ gem 'rails', '4.1.8'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'      #'4.0.2'
 gem 'bcrypt'        #, '~> 3.1.7' #3.1.10 встал!!!
+gem 'sprockets', '2.11.0'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
     gem 'sqlite3'
     gem 'rspec-rails', '2.13.1'
     gem 'minitest'
-#    gem 'minitest-rails-capybara'
+#   gem 'minitest-rails-capybara'
 #,'3.8.7.2'
 #'1.3.8'
 end
@@ -24,6 +25,7 @@ gem 'sass-rails', '4.0.1'
 gem 'uglifier', '2.1.1'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '4.0.1'
+gem 'coffee-script-source', '1.8.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer',  platforms: :ruby
 
@@ -38,6 +40,10 @@ group :doc do
     gem 'sdoc', '0.3.20', require: false
 end
 
+group :test do
+    gem 'factory_girl_rails', '4.2.1'
+    gem 'capybara'
+end
 group :production do
     gem 'pg', '0.15.1'
     gem 'rails_12factor', '0.0.2'
