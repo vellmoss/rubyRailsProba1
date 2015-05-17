@@ -10,10 +10,13 @@ gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.2'      #'4.0.2'
 gem 'bcrypt'        #, '~> 3.1.7' #3.1.10 встал!!!
 gem 'sprockets', '2.11.0'
+gem 'faker', '1.1.2'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
     gem 'sqlite3'
-    gem 'rspec-rails', '2.13.1'
+    gem "rspec-rails", '~> 2.14.0.rc1'
     gem 'minitest'
 #   gem 'minitest-rails-capybara'
 #,'3.8.7.2'
