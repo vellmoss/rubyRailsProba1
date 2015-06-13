@@ -137,7 +137,13 @@ aside {
 
 .gravatar {
   float: left;
+  margin-left: 10px;
   margin-right: 10px;
+  border-radius: 100px; /* Радиус скругления */
+//  border: 1px solid #5c738b; /* Параметры рамки */
+  &:hover {
+    box-shadow: 0 0 0 1px #5c738b, 0 0 8px #333; /* Параметры теней */
+  }
 }
 
 .stats {
